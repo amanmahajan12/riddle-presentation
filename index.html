@@ -3,155 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Brain Teasers & Riddle Challenge</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.1/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.1/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.1/theme/sky.min.css">
     <style>
-        .reveal h1, .reveal h2, .reveal h3 {
-            text-transform: none;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
         }
-        .reveal .riddle-question {
+        h1, h2 {
             color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .riddle {
+            margin-bottom: 20px;
+        }
+        .riddle-question {
             font-weight: bold;
+            margin-bottom: 10px;
         }
-        .reveal .riddle-answer {
-            color: #3498db;
-            font-style: italic;
+        .riddle-answer {
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        .fragment.blur {
-            filter: blur(5px);
-            transition: filter 0.5s ease;
+        .riddle-answer:hover {
+            background-color: #2980b9;
         }
-        .fragment.blur.visible {
-            filter: blur(0);
+        .riddle-answer.revealed {
+            color: #2c3e50;
+            background-color: #ecf0f1;
+        }
+        .section {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <!-- Title Slide -->
-            <section>
-                <h1>Brain Teasers & Riddle Challenge</h1>
-                <h3>A Journey of Wit, Humor, and Creative Thinking</h3>
-            </section>
+    <h1>Brain Teasers & Riddle Challenge</h1>
+    <p>A Journey of Wit, Humor, and Creative Thinking</p>
 
-            <!-- Why Riddles Matter -->
-            <section>
-                <h2>Why Riddles Matter</h2>
-                <ul>
-                    <li class="fragment">Stimulate Critical Thinking</li>
-                    <li class="fragment">Enhance Problem-Solving Skills</li>
-                    <li class="fragment">Break Monotony in Professional Settings</li>
-                    <li class="fragment">Encourage Creative Collaboration</li>
-                </ul>
-            </section>
+    <div class="section">
+        <h2>Why Riddles Matter</h2>
+        <ul>
+            <li>Stimulate Critical Thinking</li>
+            <li>Enhance Problem-Solving Skills</li>
+            <li>Break Monotony in Professional Settings</li>
+            <li>Encourage Creative Collaboration</li>
+        </ul>
+    </div>
 
-            <!-- Word Play Riddles -->
-            <section>
-                <h2>Word Play Riddles</h2>
-                <section>
-                    <p class="riddle-question">What has many keys but cannot open a single lock?</p>
-                    <p class="riddle-answer fragment blur">A piano</p>
-                </section>
-                <section>
-                    <p class="riddle-question">What flies forever, rests never?</p>
-                    <p class="riddle-answer fragment blur">The wind</p>
-                </section>
-                <section>
-                    <p class="riddle-question">What's always coming but never arrives?</p>
-                    <p class="riddle-answer fragment blur">Tomorrow</p>
-                </section>
-            </section>
-
-            <!-- Logical Puzzles -->
-            <section>
-                <h2>Logical Puzzles</h2>
-                <section>
-                    <p class="riddle-question">Two men are in a desert. One is dead. What's in the dead man's backpack?</p>
-                    <p class="riddle-answer fragment blur">A parachute</p>
-                </section>
-                <section>
-                    <p class="riddle-question">How many Friday the 13ths can there be in one calendar year?</p>
-                    <p class="riddle-answer fragment blur">Three</p>
-                </section>
-                <section>
-                    <p class="riddle-question">A cowboy rides into town on Friday. He stays three days, then rides out of town on Friday. How?</p>
-                    <p class="riddle-answer fragment blur">His horse is named Friday</p>
-                </section>
-            </section>
-
-            <!-- Perception Challenges -->
-            <section>
-                <h2>Perception Challenges</h2>
-                <section>
-                    <p class="riddle-question">What's always found on the ground but never gets dirty?</p>
-                    <p class="riddle-answer fragment blur">A shadow</p>
-                </section>
-                <section>
-                    <p class="riddle-question">I speak without a mouth and listen without ears. What am I?</p>
-                    <p class="riddle-answer fragment blur">An echo</p>
-                </section>
-                <section>
-                    <p class="riddle-question">What has a head, a tail, is brown, and has no legs?</p>
-                    <p class="riddle-answer fragment blur">A penny</p>
-                </section>
-            </section>
-
-            <!-- Lateral Thinking -->
-            <section>
-                <h2>Lateral Thinking Teasers</h2>
-                <section>
-                    <p class="riddle-question">What flowers are kissable?</p>
-                    <p class="riddle-answer fragment blur">Tulips</p>
-                </section>
-                <section>
-                    <p class="riddle-question">What can go up a chimney down, but can't go down a chimney up?</p>
-                    <p class="riddle-answer fragment blur">An umbrella</p>
-                </section>
-                <section>
-                    <p class="riddle-question">What three-word question can you never answer "yes" to?</p>
-                    <p class="riddle-answer fragment blur">"Are you dead?"</p>
-                </section>
-            </section>
-
-            <!-- Team Challenge -->
-            <section>
-                <h2>Team Riddle Challenge</h2>
-                <ul>
-                    <li class="fragment">Divide into Teams</li>
-                    <li class="fragment">Each Team Gets 5 Minutes to Solve Riddles</li>
-                    <li class="fragment">Points Awarded for Correct Answers</li>
-                    <li class="fragment">Bonus Points for Creative Explanations</li>
-                </ul>
-            </section>
-
-            <!-- Conclusion -->
-            <section>
-                <h2>Key Takeaways</h2>
-                <ul>
-                    <li class="fragment">Riddles Enhance Cognitive Flexibility</li>
-                    <li class="fragment">Promote Team Bonding</li>
-                    <li class="fragment">Demonstrate Importance of Different Perspectives</li>
-                    <li class="fragment">Learning Can Be Fun!</li>
-                </ul>
-                <blockquote class="fragment">
-                    "The power of a riddle is not in its answer, but in the journey of thinking"
-                </blockquote>
-            </section>
+    <div class="section">
+        <h2>Word Play Riddles</h2>
+        <div class="riddle">
+            <div class="riddle-question">What has many keys but cannot open a single lock?</div>
+            <div class="riddle-answer">A piano</div>
+        </div>
+        <div class="riddle">
+            <div class="riddle-question">What flies forever, rests never?</div>
+            <div class="riddle-answer">The wind</div>
+        </div>
+        <div class="riddle">
+            <div class="riddle-question">What's always coming but never arrives?</div>
+            <div class="riddle-answer">Tomorrow</div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.1/reveal.min.js"></script>
+    <div class="section">
+        <h2>Logical Puzzles</h2>
+        <div class="riddle">
+            <div class="riddle-question">Two men are in a desert. One is dead. What's in the dead man's backpack?</div>
+            <div class="riddle-answer">A parachute</div>
+        </div>
+        <div class="riddle">
+            <div class="riddle-question">How many Friday the 13ths can there be in one calendar year?</div>
+            <div class="riddle-answer">Three</div>
+        </div>
+        <div class="riddle">
+            <div class="riddle-question">A cowboy rides into town on Friday. He stays three days, then rides out of town on Friday. How?</div>
+            <div class="riddle-answer">His horse is named Friday</div>
+        </div>
+    </div>
+
     <script>
-        Reveal.initialize({
-            width: 1280,
-            height: 720,
-            margin: 0.1,
-            minScale: 0.2,
-            maxScale: 1.5,
-            transition: 'slide',
-            plugins: []
+        document.querySelectorAll('.riddle-answer').forEach(answer => {
+            answer.addEventListener('click', function() {
+                this.classList.toggle('revealed');
+            });
         });
     </script>
 </body>
